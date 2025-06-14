@@ -15,32 +15,34 @@ const MandatoryDisclosurePage: React.FC = () => {
   ];
 
   const csvFiles = [
-    '../../src/assets/tab1.csv',
-    '../../src/assets/tab2.csv',
-    '../../src/assets/tab3.csv',
-    '../../src/assets/tab4.csv',
-    '../../src/assets/tab5.csv',
+    import('../assets/tabs/tab1.csv?raw'),
+    import('../assets/tabs/tab2.csv?raw'),
+    import('../assets/tabs/tab3.csv?raw'),
+    import('../assets/tabs/tab4.csv?raw'),
+    import('../assets/tabs/tab5.csv?raw'),
   ];
+  
 
   useEffect(() => {
     const loadTabData = async () => {
       const newTabData: any[][] = [];
-      for (const file of csvFiles) {
+      for (const filePromise of csvFiles) {
         try {
-          const response = await fetch(file);
-          const text = await response.text();
-          const results = Papa.parse(text, { header: true, skipEmptyLines: true });
+          const text = await filePromise;
+          const results = Papa.parse(text.default, { header: true, skipEmptyLines: true });
           newTabData.push(results.data);
         } catch (error) {
-          console.error(`Error loading ${file}:`, error);
+          console.error(`Error loading file:`, error);
           newTabData.push([]);
         }
       }
       setTabData(newTabData);
     };
-
+  
+  
     loadTabData();
   }, []);
+  
 
   const tableColumns = tabData[activeTab].length > 0 ? Object.keys(tabData[activeTab][0]).map(key => ({
     header: key,

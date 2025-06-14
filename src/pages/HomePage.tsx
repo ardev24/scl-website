@@ -5,6 +5,7 @@ import Card from '../components/Card';
 import { BookOpenIcon, LightBulbIcon, UsersIcon, AcademicCapIcon } from '../components/IconComponents';
 import Button from '../components/Button';
 import Tab from '../components/Tab';
+import mainbuilding from '../assets/photos/main.jpg'
 
 const whyChooseUsData = [
   {
@@ -55,7 +56,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="space-y-16 md:space-y-24">
 <img
-        src="../../src/assets/photos/main.jpg"
+        src={mainbuilding}
         alt="Main Building"
         className="w-full rounded-lg shadow-2xl animate-fade-in-up max-h-96 object-cover"
         loading="lazy"
