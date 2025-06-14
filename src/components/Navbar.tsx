@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <NavLink to="/" className="flex items-center text-brand-text-on-primary hover:text-brand-secondary transition-colors duration-300">
-              <img src="/src/assets/photos/website/school logo.png" alt="School Logo" className="h-10 w-10 mr-2" />
+              <img src="../../src/assets/photos/website/school logo.png" alt="School Logo" className="h-10 w-10 mr-2" />
               <span className="font-bold text-2xl md:text-xl font-serif">SUDHIR MEMORIAL INSTITUTE GOBARDANGA</span>
             </NavLink>
           </div>

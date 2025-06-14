@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           {/* School Info */}
           <div className="mb-6 md:mb-0">
             <NavLink to="/" className="flex items-center mb-4">
-              <img src="/src/assets/photos/website/school logo.png" alt="School Logo" className="h-10 w-10 mr-2" />
+              <img src="../../src/assets/photos/website/school logo.png" alt="School Logo" className="h-10 w-10 mr-2" />
               <span className="text-2xl font-bold text-brand-text-on-primary font-serif">SUDHIR MEMORIAL INSTITUTE GOBARDANGA</span>
             </NavLink>
             <p className="text-sm text-brand-text-on-primary opacity-90">
