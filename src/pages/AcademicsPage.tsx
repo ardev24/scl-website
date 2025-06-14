@@ -27,7 +27,7 @@ const coCurricularActivities = [
 const AcademicsPage: React.FC = () => {
   return (
     <div className="space-y-16">
-      <SectionTitle title="Academics at Elite CBSE" subtitle="Fostering Excellence in Learning" />
+      <SectionTitle title="Academics at SMI Gobardanga" subtitle="Fostering Excellence in Learning" />
 
       <section className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
         <SectionTitle title="Our Facilities" subtitle="State-of-the-art infrastructure to support learning and growth." />
