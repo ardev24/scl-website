@@ -34,19 +34,19 @@ const tabItems = [
   {
     id: 1,
     title: "Smart Classrooms",
-    content: "Content for Smart Classrooms",
+    content: "Smart Classrooms",
     image: "src/assets/photos/website/IMG-20200414-WA0016.jpg",
   },
   {
     id: 2,
     title: "Uninterrupted Electricity Power Backup",
-    content: "Content for Uninterrupted Electricity Power Backup",
+    content: "Uninterrupted Electricity Power Backup",
     image: "src/assets/photos/website/IMG-20200414-WA0017.jpg",
   },
   {
     id: 3,
     title: "Huge Playground with extra Activities Place",
-    content: "Content for Huge Playground with extra Activities Place",
+    content: "Huge Playground with extra Activities Place",
     image: "src/assets/photos/website/IMG-20200414-WA0018.jpg",
   },
 ];
@@ -95,7 +95,9 @@ const HomePage: React.FC = () => {
 
       <section className="animate-fade-in-up">
         <SectionTitle title="Our Facilities" subtitle="Explore our state-of-the-art facilities." />
-        <Tab tabs={tabItems} />
+        <div className="mx-auto">
+          <Tab tabs={tabItems} />
+        </div>
       </section>
 
       <section className="bg-brand-primary text-brand-text-on-primary p-8 md:p-12 rounded-lg shadow-xl text-center animate-fade-in-up">

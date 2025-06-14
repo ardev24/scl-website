@@ -5,9 +5,9 @@ import { ContactInfo } from '../types';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '../components/IconComponents';
 
 const contactInfoData: ContactInfo[] = [
-  { icon: <MapPinIcon className="w-8 h-8 text-brand-secondary" />, label: "Address", value: "123 Education Lane, Knowledge City, Learning State, India 400001" }, /* Deeper Orange Icon */
-  { icon: <PhoneIcon className="w-8 h-8 text-brand-secondary" />, label: "Phone", value: "+91 12345 67890", href: "tel:+911234567890" },
-  { icon: <EnvelopeIcon className="w-8 h-8 text-brand-secondary" />, label: "Email", value: "info@elitecbse.edu", href: "mailto:info@elitecbse.edu" },
+  { icon: <MapPinIcon className="w-8 h-8 text-brand-secondary" />, label: "Address", value: "Jamdani, Gobardanga, West Bengal 743247" }, /* Deeper Orange Icon */
+  { icon: <PhoneIcon className="w-8 h-8 text-brand-secondary" />, label: "Phone", value: "9007032285", href: "tel:+911234567890" },
+  { icon: <EnvelopeIcon className="w-8 h-8 text-brand-secondary" />, label: "Email", value: "smi.gobardanga@gmail.com", href: "mailto:smi.gobardanga@gmail.com" },
 ];
 
 const ContactUsPage: React.FC = () => {
@@ -126,12 +126,18 @@ const ContactUsPage: React.FC = () => {
           <div className="bg-brand-surface p-8 rounded-lg shadow-xl">
              <h3 className="text-2xl font-semibold text-brand-secondary mb-4 font-serif">Find Us On Map</h3> {/* Deeper Orange */}
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
-              <img 
-                src={`https://picsum.photos/seed/maplocation/600/400`}
-                alt="School Location Map" 
-                className="w-full h-full object-cover"
-              />
+            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?q=Sudhir+Memorial+Institute+Gobardanga&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
+          </div>
           </div>
         </section>
       </div>

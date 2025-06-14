@@ -24,7 +24,7 @@ const Tab: React.FC<TabProps> = ({ tabs }) => {
         {tabs.map((tab, index) => (
           <button
             key={tab.id}
-            className={`flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center rounded-lg shadow-md ${
+            className={`flex-shrink-0 w-80 h-80 flex flex-col items-center justify-center rounded-lg shadow-md ${
               activeTab === index ? 'bg-brand-secondary text-brand-text-on-primary' : 'bg-white text-brand-text-primary'
             }`}
             onClick={() => handleTabClick(index)}
@@ -32,7 +32,7 @@ const Tab: React.FC<TabProps> = ({ tabs }) => {
             <img
               src={tab.image}
               alt={tab.title}
-              className="w-28 h-28 object-cover rounded-md mb-2"
+              className="w-40 h-40 object-cover rounded-md mb-2"
             />
             <span className="text-sm text-center px-2">{tab.title}</span>
           </button>

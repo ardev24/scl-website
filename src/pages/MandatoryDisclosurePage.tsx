@@ -16,10 +16,10 @@ const MandatoryDisclosurePage: React.FC = () => {
 
   const csvFiles = [
     '../../src/assets/tab1.csv',
-    'tab2.csv',
-    'tab3.csv',
-    'tab4.csv',
-    'tab5.csv',
+    '../../src/assets/tab2.csv',
+    '../../src/assets/tab3.csv',
+    '../../src/assets/tab4.csv',
+    '../../src/assets/tab5.csv',
   ];
 
   useEffect(() => {

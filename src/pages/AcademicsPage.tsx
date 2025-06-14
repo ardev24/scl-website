@@ -8,11 +8,11 @@ import Button from '../components/Button';
 
 const facilities: Facility[] = [
   { name: "Science Labs", description: "State-of-the-art physics, chemistry, and biology labs for hands-on learning.", imageUrl: "https://picsum.photos/seed/sciencelab/600/400", icon: <BeakerIcon className="w-12 h-12 text-brand-primary" /> }, /* Light orange for card icons */
-  { name: "Computer Labs", description: "Modern computer labs with high-speed internet and latest software.", imageUrl: "https://picsum.photos/seed/computerlab/600/400", icon: <ComputerDesktopIcon className="w-12 h-12 text-brand-primary" /> },
-  { name: "Library", description: "A vast collection of books, journals, and digital resources to foster reading habits.", imageUrl: "https://picsum.photos/seed/library/600/400", icon: <BookOpenIcon className="w-12 h-12 text-brand-primary" /> },
+  { name: "Computer Lab", description: "Modern computer lab with high-speed internet and latest software.", imageUrl: "https://picsum.photos/seed/computerlab/600/400", icon: <ComputerDesktopIcon className="w-12 h-12 text-brand-primary" /> },
+  { name: "Library", description: "A vast collection of books, journals, and resources to foster reading habits.", imageUrl: "https://picsum.photos/seed/library/600/400", icon: <BookOpenIcon className="w-12 h-12 text-brand-primary" /> },
   { name: "Sports Facilities", description: "Extensive grounds for cricket, football, basketball, and indoor games.", imageUrl: "https://picsum.photos/seed/sports/600/400", icon: <TrophyIcon className="w-12 h-12 text-brand-primary" /> },
   { name: "Art & Music Rooms", description: "Dedicated spaces for students to explore their creativity in arts and music.", imageUrl: "https://picsum.photos/seed/artmusic/600/400", icon: <PaintBrushIcon className="w-12 h-12 text-brand-primary" /> },
-  { name: "Auditorium", description: "A large, well-equipped auditorium for events, performances, and assemblies.", imageUrl: "https://picsum.photos/seed/auditorium/600/400", icon: <MusicalNoteIcon className="w-12 h-12 text-brand-primary" /> },
+  // { name: "Auditorium", description: "A large, well-equipped auditorium for events, performances, and assemblies.", imageUrl: "https://picsum.photos/seed/auditorium/600/400", icon: <MusicalNoteIcon className="w-12 h-12 text-brand-primary" /> },
 ];
 
 const coCurricularActivities = [
@@ -28,30 +28,6 @@ const AcademicsPage: React.FC = () => {
   return (
     <div className="space-y-16">
       <SectionTitle title="Academics at Elite CBSE" subtitle="Fostering Excellence in Learning" />
-
-      <section id="curriculum" className="animate-fade-in-up">
-        <div className="bg-brand-surface p-8 rounded-lg shadow-xl">
-          <div className="flex items-center mb-6">
-            <AcademicCapIcon className="w-12 h-12 text-brand-secondary mr-4" /> {/* Deeper Orange */}
-            <h3 className="text-2xl font-semibold text-brand-secondary font-serif">Our Curriculum (CBSE)</h3> {/* Deeper Orange */}
-          </div>
-          <p className="text-brand-text-secondary mb-4 leading-relaxed">
-            SUDHIR MEMORIAL INSTITUTE GOBARDANGA is affiliated with the Central Board of Secondary Education (CBSE), New Delhi. Our curriculum is designed to be comprehensive, balanced, and relevant to the needs of students in the 21st century. We emphasize a student-centered approach that encourages inquiry, critical thinking, and problem-solving skills.
-          </p>
-          <p className="text-brand-text-secondary mb-4 leading-relaxed">
-            Key features of our curriculum include:
-          </p>
-          <ul className="list-disc list-inside text-brand-text-secondary space-y-2 mb-6">
-            <li>Focus on conceptual understanding over rote learning.</li>
-            <li>Integration of technology in teaching and learning processes.</li>
-            <li>Continuous and Comprehensive Evaluation (CCE) to assess holistic development.</li>
-            <li>Emphasis on co-curricular activities for overall personality development.</li>
-            <li>Value-based education to instill strong moral and ethical principles.</li>
-            <li>Preparation for competitive examinations and future career paths.</li>
-          </ul>
-          <img src="https://picsum.photos/seed/curriculum/800/400" alt="CBSE Curriculum" className="rounded-lg shadow-md w-full object-cover h-64 md:h-80" />
-        </div>
-      </section>
 
       <section className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
         <SectionTitle title="Our Facilities" subtitle="State-of-the-art infrastructure to support learning and growth." />
