@@ -35,19 +35,19 @@ const tabItems = [
     id: 1,
     title: "Smart Classrooms",
     content: "Smart Classrooms",
-    image: "src/assets/photos/website/IMG-20200414-WA0016.jpg",
+    image: "/src/assets/photos/website/IMG-20200414-WA0016.jpg",
   },
   {
     id: 2,
     title: "Uninterrupted Electricity Power Backup",
     content: "Uninterrupted Electricity Power Backup",
-    image: "src/assets/photos/website/IMG-20200414-WA0017.jpg",
+    image: "/src/assets/photos/website/IMG-20200414-WA0017.jpg",
   },
   {
     id: 3,
     title: "Huge Playground with extra Activities Place",
     content: "Huge Playground with extra Activities Place",
-    image: "src/assets/photos/website/IMG-20200414-WA0018.jpg",
+    image: "/src/assets/photos/website/IMG-20200414-WA0018.jpg",
   },
 ];
 
@@ -55,7 +55,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="space-y-16 md:space-y-24">
 <img
-        src="src/assets/photos/main.jpg"
+        src="/src/assets/photos/main.jpg"
         alt="Main Building"
         className="w-full rounded-lg shadow-2xl animate-fade-in-up max-h-96 object-cover"
         loading="lazy"
