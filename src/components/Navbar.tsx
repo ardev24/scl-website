@@ -22,9 +22,23 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <NavLink to="/" className="flex items-center text-brand-text-on-primary hover:text-brand-secondary transition-colors duration-300">
-              <img src={schoologo} alt="School Logo" className="h-10 w-10 mr-2" />
-              <span className="font-bold text-2xl md:text-xl font-serif">SUDHIR MEMORIAL INSTITUTE GOBARDANGA</span>
+            <NavLink
+              to="/"
+              className="flex items-center text-brand-text-on-primary hover:text-brand-secondary transition-colors duration-300"
+            >
+              <img
+                src={schoologo}
+                alt="School Logo"
+                className="h-8 w-8 sm:h-10 sm:w-10 mr-2"
+              />
+              <span className="font-bold text-lg sm:text-xl lg:text-2xl font-serif truncate">
+                {/* For smaller screens */}
+                <span className="md:hidden">SMI-GBG</span>
+                {/* For medium and larger screens */}
+                <span className="hidden md:inline">
+                  SUDHIR MEMORIAL INSTITUTE GOBARDANGA
+                </span>
+              </span>
             </NavLink>
           </div>
           <div className="hidden md:block">
@@ -36,8 +50,8 @@ const Navbar: React.FC = () => {
                   className={({ isActive }) =>
                     `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
                       isActive
-                        ? 'bg-brand-secondary text-brand-text-on-secondary'
-                        : 'text-brand-text-on-primary hover:bg-black hover:bg-opacity-10 hover:text-brand-secondary'
+                        ? "bg-brand-secondary text-brand-text-on-secondary"
+                        : "text-brand-text-on-primary hover:bg-black hover:bg-opacity-10 hover:text-brand-secondary"
                     }`
                   }
                 >
@@ -76,8 +90,8 @@ const Navbar: React.FC = () => {
                 className={({ isActive }) =>
                   `block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ${
                     isActive
-                      ? 'bg-brand-secondary text-brand-text-on-secondary'
-                      : 'text-brand-text-on-primary hover:bg-black hover:bg-opacity-10 hover:text-brand-secondary'
+                      ? "bg-brand-secondary text-brand-text-on-secondary"
+                      : "text-brand-text-on-primary hover:bg-black hover:bg-opacity-10 hover:text-brand-secondary"
                   }`
                 }
               >
